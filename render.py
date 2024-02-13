@@ -1,15 +1,14 @@
 from jinja2 import Environment, FileSystemLoader
-import argparse
+import os
 
-parser = argparse.ArgumentParser()
-fpath = parser.parse_args()
+os.mkdirs('_site')
 env = Environment(loader=FileSystemLoader('templates'))
 templates = ['index.html', 'planes.html', 'programas.html', 'espacio.html', 'terminos.html', '404.html', 'nosotros.html']
 
 for template in templates:
     tmp = env.get_template(template)
     out = tmp.render()
-    location = fpath + "{}".format(template)
+    location = "./_site/{}".format(template)
     with open(location, "w", encoding="utf-8") as f:
         f.write(out)
 print("Listo")
