@@ -1,7 +1,7 @@
 from jinja2 import Environment, FileSystemLoader
 import os
 
-os.mkdirs('_site')
+os.mkdir('_site')
 env = Environment(loader=FileSystemLoader('templates'))
 templates = ['index.html', 'planes.html', 'programas.html', 'espacio.html', 'terminos.html', '404.html', 'nosotros.html']
 
