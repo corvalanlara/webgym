@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+	<section class="section">
+		<div class="hero is-medium is-dark has-background">
+			<img alt="Gente entrenando en el gimnasio" class="hero-background is-transparent" src="images/selected/personaentrenando.jpg"/>
+  			<div class="hero-body">
+				<div class="container">
+					<h1 class="title">Descubre una nueva forma de <span class="has-text-link">entrenar</span></h1>
+				</div>
+  			</div>
+		</div>
+	</section>
+	<section class="section">
+		<p><span class="title">Planes libres:</span> Acceso libre a la sala de máquinas y área funcional</p>
+		{% include "planeslibres.html" %}
+	</section>
+	<section class="section">
+		<p><span class="title">Planes guiados:</span> Acceso libre a la sala de máquinas y área funcional + asesoría de un entrenador + evaluación nutricional</p>
+		{% include "planesguiados.html" %}
+	</section>
+	<section class="section">
+		<div class="container">
+			<div class="content">
+				<div class="columns">
+					<div class="column">
+						<p class="title">Asesorias / Clases</p>
+						<ul>
+							<li>Crossfit</li>
+							<li>Entrenamiento funcional</li>
+							<li>Entrenamiento en sala de máquinas</li>
+							<li>Pilates</li>
+							<li>TRX</li>
+						</ul>
+					</div>
+					<div class="column">
+						<p class="title">Asesoría Nutricional</p>
+						<p>Servicio de nutrición deportiva</p>
+						<p>Nutrición vegetariana-vegana</p>
+						<ul>
+							<li>$20.000 primera sesión</li>
+							<li>$15.000 sesión de control</li>
+						</ul>
+						</br>
+						<p class="title">Asesoría Kinesiológica</p>
+						<p>$12.000 por sesión</p>
+						<p>Convenio con Isapres</p>
+					</div>
+					<div class="column">
+						{% include "horario.html" %}
+					</div>
+					<div class="column">
+						<p class="title">Datos bancarios</p>
+						<p>Banco Falabella</p>
+						<p>Cuenta vista</p>
+						<p>N° de cuenta: 5553002520-3</p>
+						<p>RUN: 14.245.902-7</p>
+						<p>Johanna Santis &lt;johannasantis@ifitgym.cl&gt;</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}

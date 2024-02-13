@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>{% block title %}IFITGYM Melipilla{% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="css/bulma.css">
+  	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<link rel="icon" type="image/png" href="images/logogym.png">
+	<!-- bulma carousel -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/css/bulma-carousel.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Primary Meta Tags -->
+	<meta name="title" content="IFITGYM Melipilla">
+	<meta name="description" content="Ofrecemos un servicio personalizado con foco en los objetivos de cada usuario">
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ifitgym.cl/">
+	<meta property="og:title" content="IFITGYM Melipilla">
+	<meta property="og:description" content="Ofrecemos un servicio personalizado con foco en los objetivos de cada usuario">
+	<meta property="og:image" content="images/portada/maquinas.jpg">
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://ifitgym.cl">
+	<meta property="twitter:title" content="IFITGYM Melipilla">
+	<meta property="twitter:description" content="Ofrecemos un servicio personalizado con foco en los objetivos de cada usuario">
+	<meta property="twitter:image" content="images/portada/maquinas.jpg">
+		<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-H27704YW17"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-H27704YW17');
+	</script>
+	<!-- end google tag -->
+</head>
+<body class="is-clipped">
+	<section class="section">
+		<div class="container">
+			<nav class="navbar" role="navigation" aria-label="main navigation">
+	  			<div class="navbar-brand has-text-centered">
+				    <a class="navbar-item" href="index.html">
+					   <!--<h1 class="is-family-primary is-size-1">iFit Gym</h1>-->
+				   	   <img class="imgsize" src="images/logogym.png" alt="Logo del gimnasio">
+				    </a>
+				    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbargym">
+				      <span aria-hidden="true"></span>
+				      <span aria-hidden="true"></span>
+				      <span aria-hidden="true"></span>
+				    </a>
+				</div>
+
+				  <div id="navbargym" class="navbar-menu">
+				    <div class="navbar-end is-size-3">
+
+				   	  <a class="navbar-item" href="nosotros.html">
+				        Nosotros
+				      </a>
+
+				      <a class="navbar-item" href="planes.html">
+				        Planes
+				      </a>
+
+				      <a class="navbar-item" href="programas.html">
+				        Programas
+				      </a>
+
+				      <a class="navbar-item" href="espacio.html">
+				        Espacio
+				      </a>
+
+				    </div>
+				  </div>
+			</nav>
+			<div class="level is-mobile">
+				<div class="level-left">
+	  				<p class="level-item has-text-centered">
+	  				  	<a class="link is-info" href="https://www.instagram.com/ifitgym_melipilla/">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+							@ifitgym_melipilla
+						</a>
+	  				</p>
+	  				<p class="level-item has-text-centered">
+	  				  	<a class="link is-info" href="https://wa.me/56994342015">
+							<i class="fa fa-whatsapp" aria-hidden="true"></i>
+							+56 9 94342015
+						</a>
+	  				</p>
+				</div>
+				<div class="level-right">
+				</div>
+			</div>
+		</div>
+	</section>
+	<main>
+		<div class="container">
+			{% block contenido %}{% endblock %}
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="content has-text-centered">
+				<p>Todos los derechos reservados.</p>
+				<p><a href="terminos.html">Términos y condiciones de uso</a></p>
+				<p>Libertad 1006, Melipilla</p>
+				<p>Desarrollado por <a id="webdev" href="https://betarraga.com">betarraga</a></p>
+			</div>
+		</div>
+	</footer>
+	<!-- Javascrip -->
+	<script src="js/index.js"></script>
+	<!-- bulma carousel js -->
+	<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+	{% block js %}{% endblock %}
+</body>
+</html>

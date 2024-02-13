@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+	<section class="section">
+		<div class="container">
+			<!-- Start Carousel -->
+			<div id="sliderportada" class="carousel">
+				<div class="item-1 box">
+					<figure class="image">
+						<img src="images/portada/persona6.jpg" alt="Fotografía de una persona entrenando">
+					</figure>
+				</div>
+				<div class="item-2 box">
+					<figure class="image">
+						<img src="images/portada/persona7.jpg" alt="Fotografía de una persona entrenando">
+					</figure>
+				</div>
+				<div class="item-3 box">
+					<figure class="image">
+						<img src="images/portada/persona8.jpg" alt="Fotografía de una persona entrenando">
+					</figure>
+				</div>
+				<div class="item-4 box">
+					<figure class="image">
+						<img src="images/portada/persona9.jpg" alt="Fotografía de una persona entrenando">
+					</figure>
+				</div>
+				<div class="item-5 box">
+					<figure class="image">
+						<img src="images/portada/persona10.jpg" alt="Fotografía de una persona entrenando">
+					</figure>
+				</div>
+				<div class="item-6 box">
+					<figure class="image">
+						<img src="images/portada/persona11.jpg" alt="Fotografía de una persona entrenando">
+					</figure>
+				</div>
+				<div class="item-7 box">
+					<figure class="image">
+						<img src="images/portada/persona12.jpg" alt="Fotografía de una persona entrenando">
+					</figure>
+				</div>
+			</div>
+			<!-- End Carousel -->
+		</div>
+	</section>
+
+	<div class="hero is-medium is-dark has-background">
+		<img alt="Gente entrenando en el gimnasio" class="hero-background is-transparent" src="images/hero.jpeg"/>
+  		<div class="hero-body">
+			<div class="container">
+				<h1 class="title">Ofrecemos un servicio personalizado con foco en los <span class="has-text-link">objetivos de cada usuario</span></h1>
+			</div>
+  		</div>
+	</div>
+
+	<div class="hero is-small is-dark">
+  		<div class="hero-body">
+			<div class="container has-text-centered">
+				<h1 class="title">¿Te gustaría asistir por un día de prueba gratis? <a class="button has-text-link" href="https://docs.google.com/forms/d/e/1FAIpQLScfTu7bLZkAqFCuxoImSXZAWRU9VxyU_jwz-zABHRVNUUYupw/viewform">Solicítalo aquí</a></h1>
+			</div>
+  		</div>
+	</div>
+
+	<section class="section">
+		<div class="tile is-ancestor">
+			<div class="tile is-parent">
+				<article class="tile is-child box">
+					{% include "horario.html" %}
+				</article>
+				<article class="tile is-child box">
+					<a href="planes.html">
+						<div id="card1" class="card has-background-info card-igual imagenboton is-clickable">
+							<div class="card-content has-text-centered">
+								<p class="title is-size-1 has-text-white palabra">Planes</p>
+							</div>
+						</div>
+					</a>
+				</article>
+				<article class="tile is-child box">
+					<a href="programas.html">
+						<div id="card2" class="card has-background-info card-igual imagenboton is-clickable">
+							<div class="card-content has-text-centered">
+								<p class="title has-text-white is-size-1 palabra">Programas</p>
+							</div>
+						</div>
+					</a>
+				</article>
+			</div>
+		</div>
+		<div class="tile is-ancestor">
+			<div class="tile is-parent">
+				<article class="tile is-child box">
+					<figure class="image">
+						<img alt="Fotografía del box de CrossFit" src="images/portada/crossfit.jpg"/>
+						<figcaption>Box de CrossFit</figcaption>
+					</figure>
+				</article>
+				<article class="tile is-child box">
+					<figure class="image">
+						<img alt="Fotografía de la sala de máquinas" src="images/portada/maquinas.jpg"/>
+						<figcaption>Sala de máquinas</figcaption>
+					</figure>
+				</article>
+			</div>
+		</div>
+	</section>
+{% endblock %}
+
+{% block js %}
+<script>
+	bulmaCarousel.attach('#sliderportada', {
+			slidesToScroll: 1,
+			slidesToShow: 3,
+			autoplay: true,
+			infinite: true
+		});
+</script>
+{% endblock %}
