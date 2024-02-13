@@ -44,7 +44,7 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Build with Jinja2
         # Outputs to the './_site' directory by default
-        run: python render.py
+        run: python render.py "${{ steps.pages.outputs.base_path }}"
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
